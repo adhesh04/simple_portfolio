@@ -23,7 +23,7 @@ export default function Experience() {
   const exp = experienceData[0]; // KaarTech
 
   return (
-    <section id="experience" className="py-20 sm:py-24 border-b border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/40">
+    <section id="experience" className="py-20 sm:py-24 border-b border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="max-w-3xl mb-12">
@@ -46,7 +46,7 @@ export default function Experience() {
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div>
                 <div className="flex items-center gap-2 mb-1.5">
-                  <span className="text-xs font-mono px-2 py-0.5 rounded bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 font-semibold border border-indigo-200/60 dark:border-indigo-800/60">
+                  <span className="text-xs font-mono px-2 py-0.5 rounded bg-indigo-50 dark:bg-indigo-950/80 text-indigo-700 dark:text-indigo-300 font-semibold border border-indigo-200/60 dark:border-indigo-800/80">
                     Enterprise SaaS & AI Delivery
                   </span>
                   <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400">Production Live</span>
@@ -72,7 +72,7 @@ export default function Experience() {
             </div>
 
             {/* Leadership Callout */}
-            <div className="mt-5 p-3.5 rounded-lg bg-indigo-50/60 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/60 flex items-start gap-3 text-xs sm:text-sm text-indigo-950 dark:text-indigo-200">
+            <div className="mt-5 p-3.5 rounded-lg bg-indigo-50/60 dark:bg-indigo-950/40 border border-indigo-100 dark:border-indigo-900/60 flex items-start gap-3 text-xs sm:text-sm text-indigo-950 dark:text-indigo-200">
               <Users className="w-4 h-4 text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5" />
               <div>
                 <span className="font-semibold text-indigo-900 dark:text-indigo-300">Leadership Scope: </span>
@@ -96,7 +96,7 @@ export default function Experience() {
                     className={`p-4 sm:p-5 rounded-xl border transition-all cursor-pointer ${
                       isSelected
                         ? "border-indigo-400 dark:border-indigo-500 bg-indigo-50/20 dark:bg-indigo-950/30 shadow-xs"
-                        : "border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/40 hover:bg-zinc-50 dark:hover:bg-zinc-800/40 hover:border-zinc-300 dark:hover:border-zinc-700"
+                        : "border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950 hover:bg-zinc-50 dark:hover:bg-zinc-850 hover:border-zinc-300 dark:hover:border-zinc-700"
                     }`}
                     onClick={() => setActiveHighlightIndex(isSelected ? null : idx)}
                   >

@@ -10,7 +10,7 @@ import { publicationData } from "@/data/publications";
 
 export default function Research() {
   return (
-    <section id="research" className="py-20 sm:py-24 border-b border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/40">
+    <section id="research" className="py-20 sm:py-24 border-b border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-3xl mb-12">
@@ -32,7 +32,7 @@ export default function Research() {
           <div className="p-6 sm:p-8 border-b border-zinc-100 dark:border-zinc-800 bg-gradient-to-r from-zinc-50 via-white to-indigo-50/20 dark:from-zinc-900 dark:via-zinc-900 dark:to-zinc-900">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
               <div className="flex flex-wrap items-center gap-2">
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-mono font-semibold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800/60">
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-mono font-semibold bg-indigo-50 dark:bg-indigo-950/80 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800/80">
                   <BookOpen className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400" />
                   <span>{publicationData.venue}</span>
                 </span>
@@ -72,7 +72,7 @@ export default function Research() {
               <h4 className="text-xs font-mono font-semibold tracking-wider text-zinc-500 dark:text-zinc-400 uppercase mb-2">
                 Abstract & Contribution
               </h4>
-              <p className="text-sm sm:text-base text-zinc-700 dark:text-zinc-300 leading-relaxed bg-zinc-50/80 dark:bg-zinc-950/50 p-4 rounded-xl border border-zinc-200/70 dark:border-zinc-800">
+              <p className="text-sm sm:text-base text-zinc-700 dark:text-zinc-300 leading-relaxed bg-zinc-50/80 dark:bg-zinc-950 p-4 rounded-xl border border-zinc-200/70 dark:border-zinc-800">
                 {publicationData.abstract}
               </p>
             </div>
@@ -86,7 +86,7 @@ export default function Research() {
                 {publicationData.keyContributions.map((contrib, idx) => (
                   <div
                     key={idx}
-                    className="p-4 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-white dark:bg-zinc-850 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all text-xs sm:text-sm text-zinc-700 dark:text-zinc-300"
+                    className="p-4 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-white dark:bg-zinc-950 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all text-xs sm:text-sm text-zinc-700 dark:text-zinc-300"
                   >
                     <div className="flex items-start gap-2.5">
                       <span className="w-5 h-5 rounded-md bg-indigo-50 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 font-mono font-bold text-[11px] flex items-center justify-center shrink-0 mt-0.5">
@@ -108,7 +108,7 @@ export default function Research() {
                 {publicationData.systemHighlights.map((sh, idx) => (
                   <div
                     key={idx}
-                    className="p-4 rounded-xl bg-zinc-50 dark:bg-zinc-950/60 border border-zinc-200/70 dark:border-zinc-800 flex flex-col justify-between"
+                    className="p-4 rounded-xl bg-zinc-50 dark:bg-zinc-950 border border-zinc-200/70 dark:border-zinc-800 flex flex-col justify-between"
                   >
                     <div>
                       <div className="flex items-center gap-2 mb-2 font-semibold text-xs text-zinc-900 dark:text-zinc-100">
@@ -125,7 +125,7 @@ export default function Research() {
             </div>
 
             {/* Direct Software Link */}
-            <div className="p-4 rounded-xl bg-indigo-50/50 dark:bg-indigo-950/20 border border-indigo-100 dark:border-indigo-900/60 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs sm:text-sm">
+            <div className="p-4 rounded-xl bg-indigo-50/50 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900/60 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs sm:text-sm">
               <div className="text-indigo-950 dark:text-indigo-200">
                 <span className="font-semibold text-indigo-900 dark:text-indigo-300">Live Implementation: </span>
                 This research serves as the mathematical foundation for the{" "}

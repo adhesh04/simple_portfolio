@@ -28,7 +28,7 @@ export default function Skills() {
   const [highlightCoreOnly, setHighlightCoreOnly] = useState(false);
 
   return (
-    <section id="skills" className="py-20 sm:py-24 border-b border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/40">
+    <section id="skills" className="py-20 sm:py-24 border-b border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
@@ -109,10 +109,10 @@ export default function Skills() {
                           key={skill.name}
                           className={`inline-flex items-center px-2 py-1 rounded text-xs font-mono transition-all ${
                             isCore
-                              ? "bg-indigo-50/80 dark:bg-indigo-950/50 text-indigo-950 dark:text-indigo-200 border border-indigo-200/80 dark:border-indigo-800/80 font-medium"
+                              ? "bg-indigo-50/80 dark:bg-indigo-950/70 text-indigo-950 dark:text-indigo-200 border border-indigo-200/80 dark:border-indigo-800 font-medium"
                               : isFoundational
-                              ? "bg-zinc-50 dark:bg-zinc-950/40 text-zinc-500 dark:text-zinc-500 border border-zinc-200/50 dark:border-zinc-800"
-                              : "bg-zinc-100/80 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-300 border border-transparent"
+                              ? "bg-zinc-50 dark:bg-zinc-950 text-zinc-500 dark:text-zinc-400 border border-zinc-200/50 dark:border-zinc-800"
+                              : "bg-zinc-100/80 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 border border-transparent"
                           }`}
                         >
                           {skill.name}

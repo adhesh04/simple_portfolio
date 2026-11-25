@@ -11,7 +11,7 @@ import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#fafafa]">
+    <main className="min-h-screen bg-[#fafafa] dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100">
       <Navbar />
       <Hero />
       <About />
